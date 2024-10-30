@@ -14,9 +14,10 @@ import { checkoutService } from "@/services";
 import { Summary } from "./summary";
 
 const DynamicErrorDialog = dynamic(
-  () => import("../error-dialog").then((mod) => ({
-    default: mod.ErrorDialog
-  })),
+  () =>
+    import("../error-dialog").then((mod) => ({
+      default: mod.ErrorDialog,
+    })),
   { ssr: false },
 );
 

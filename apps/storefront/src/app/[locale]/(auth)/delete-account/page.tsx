@@ -1,16 +1,14 @@
 "use client";
 
-import { useEffect, use } from "react";
+import { use, useEffect } from "react";
 
 import { Spinner } from "@nimara/ui/components/spinner";
 
 import { deleteUserAccount } from "./actions";
 
-export default function ConfirmAccountDeletionPage(
-  props: {
-    searchParams?: Promise<Record<string, string>>;
-  }
-) {
+export default function ConfirmAccountDeletionPage(props: {
+  searchParams?: Promise<Record<string, string>>;
+}) {
   const searchParams = use(props.searchParams);
   const token = searchParams?.token ?? "";
 
