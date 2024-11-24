@@ -1,4 +1,4 @@
-import { type MenuEventSubscriptionFragment } from "@/graphql/fragments/generated";
+import { type MenuEventSubscriptionFragment } from "@/graphqldocs/fragments/generated";
 
 import { handleWebhookPostRequest } from "../helpers";
 

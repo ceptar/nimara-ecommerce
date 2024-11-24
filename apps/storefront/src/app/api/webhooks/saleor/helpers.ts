@@ -4,7 +4,7 @@ import type {
   MenuEventSubscriptionFragment,
   PageEventSubscriptionFragment,
   ProductEventSubscriptionFragment,
-} from "@/graphql/fragments/generated";
+} from "@/graphqldocs/fragments/generated";
 import { revalidateTag } from "@/lib/cache";
 import { verifySaleorWebhookSignature } from "@/lib/webhooks";
 

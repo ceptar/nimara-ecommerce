@@ -4,8 +4,8 @@ import { defineRouting } from "next-intl/routing";
 import { type Locale, SUPPORTED_LOCALES } from "@/regions/types";
 
 export const localePrefixes: Record<Locale, string> = {
-  "en-GB": "/gb",
-  "en-US": "/us",
+  "en-GB": "/",
+  "en-US": "/",
 };
 
 export const routing = defineRouting({

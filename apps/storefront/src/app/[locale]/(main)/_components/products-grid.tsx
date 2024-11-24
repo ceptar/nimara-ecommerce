@@ -39,8 +39,8 @@ export const ProductsGrid = async ({
 
   const searchContext = {
     currency: region.market.currency,
-    channel: region.market.channel,
-    languageCode: region.language.code,
+    channel: "us",
+    languageCode: "",
   } satisfies SearchContext;
 
   if (attributes?.length === 0) {
@@ -73,7 +73,7 @@ export const ProductsGrid = async ({
 
   const { results: products } = await searchService.search(
     {
-      productIds: gridProductsIds.length ? [...gridProductsIds] : [],
+      productIds: gridProductsIds,
       limit: 7,
     },
     searchContext,

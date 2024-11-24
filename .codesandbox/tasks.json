@@ -1,0 +1,78 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "command": "pnpm install",
+      "name": "Install Dependencies"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "build": {
+      "name": "build",
+      "command": "pnpm build"
+    },
+    "build:storefront": {
+      "name": "build:storefront",
+      "command": "pnpm build:storefront"
+    },
+    "build:storybook": {
+      "name": "build:storybook",
+      "command": "pnpm build:storybook"
+    },
+    "build:docs": {
+      "name": "build:docs",
+      "command": "pnpm build:docs"
+    },
+    "start": {
+      "name": "start",
+      "command": "pnpm start"
+    },
+    "start:storefront": {
+      "name": "start:storefront",
+      "command": "pnpm start:storefront"
+    },
+    "start:storybook": {
+      "name": "start:storybook",
+      "command": "pnpm start:storybook"
+    },
+    "start:docs": {
+      "name": "start:docs",
+      "command": "pnpm start:docs"
+    },
+    "codegen": {
+      "name": "codegen",
+      "command": "pnpm codegen"
+    },
+    "dev": {
+      "name": "dev",
+      "command": "pnpm dev",
+      "runAtStart": true
+    },
+    "dev:storefront": {
+      "name": "dev:storefront",
+      "command": "pnpm dev:storefront"
+    },
+    "dev:storybook": {
+      "name": "dev:storybook",
+      "command": "pnpm dev:storybook"
+    },
+    "dev:docs": {
+      "name": "dev:docs",
+      "command": "pnpm dev:docs"
+    },
+    "test": {
+      "name": "test",
+      "command": "pnpm test"
+    },
+    "test:e2e": {
+      "name": "test:e2e",
+      "command": "pnpm test:e2e"
+    },
+    "prepare": {
+      "name": "prepare",
+      "command": "pnpm prepare"
+    }
+  }
+}

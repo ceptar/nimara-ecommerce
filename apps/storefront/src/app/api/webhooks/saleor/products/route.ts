@@ -1,6 +1,6 @@
-import { secureSaleorClient } from "@/graphql/client";
-import { type ProductEventSubscriptionFragment } from "@/graphql/fragments/generated";
-import { ProductSlugQueryDocument } from "@/graphql/queries/generated";
+import { secureSaleorClient } from "@/graphqldocs/client";
+import { type ProductEventSubscriptionFragment } from "@/graphqldocs/fragments/generated";
+import { ProductSlugQueryDocument } from "@/graphqldocs/queries/generated";
 
 import { handleWebhookPostRequest } from "../helpers";
 
